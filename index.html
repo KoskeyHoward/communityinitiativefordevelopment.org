@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIDO-Home</title>
+    <link rel="icon" href="images/CIDO-logo.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #007A33;
+            color: white;
+            padding: 10px;
+        }
+
+        .logo {
+            width: 150px;
+        }
+
+        .flag-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            margin: 0;
+        }
+
+        .flag {
+            border-radius: 15px;
+            width: 85%;
+            max-width: 280px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .flag:hover {
+            transform: scale(1.07);
+        }
+
+        .spacer {
+            width: 3%;
+        }
+
+        .impact-section {
+            padding: 10px;
+            font-size: 14px;
+            background-color: rgba(255, 255, 240, 0.8);
+            border-radius: 50px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #fc6539;
+            color: black;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin: 0 10px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+
+        .country {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .country-label {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .flag-container {
+                flex-direction: column;
+            }
+
+            .flag {
+                width: 80%;
+                max-width: 100px;
+                margin-bottom: 10px;
+            }
+            .country-label {
+                font-size: 16px;
+            }
+
+            .logo {
+                width: 150px;
+            }
+
+            .impact-section {
+                font-size: 12px;
+                padding: 8px;
+            }
+
+            .social-icons a {
+                font-size: 16px;
+            }
+
+            .spacer {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <img src="images/CIDO-logo.png" alt="CIDO Logo" class="logo">
+    <p>Support to Local Solutions</p>
+    <p>Visit our localized websites below</p>
+</header>
+
+<div class="flag-container">
+    <div class="country">
+        <a href="https://cidosouthsudan.org" class="south-sudan-map">
+            <img src="images/ss.jpeg" alt="South Sudan Map" class="flag">
+        </a>
+        <p class="country-label">South Sudan</p>
+    </div>
+    <div class="spacer"></div>
+    <div class="country">
+        <a href="https://cidokenya.org" class="kenya-map">
+            <img src="images/kenya.jpeg" alt="Kenya Map" class="flag">
+        </a>
+        <p class="country-label">Kenya</p>
+    </div>
+</div>
+
+
+<div class="impact-section">
+    <p>We have supported over <strong>100,000 families</strong> across Kenya and South Sudan, providing them with essential services like food security, education, and disaster relief.</p>
+</div>
+
+<footer>
+    <div>Follow Us:</div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/cidosouthsudan"><i class="bi bi-facebook"></i> Facebook</a>
+        <a href="https://x.com/CidoSouthsudan"><i class="bi bi-twitter"></i> X</a>
+        <a href="https://www.linkedin.com/company/104601612/admin/page-posts/published/"><i class="bi bi-linkedin"></i> LinkedIn</a>
+    </div>
+</footer>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

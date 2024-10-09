@@ -1,0 +1,34 @@
+/* Full height and width for the page */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for both flags */
+.flag-container {
+    background-size: cover;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Kenya flag */
+.kenya-flag {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Kenya.svg');
+}
+
+/* South Sudan flag */
+.south-sudan-flag {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7a/Flag_of_South_Sudan.svg');
+}
+
+/* Hover effect to enlarge the flag slightly */
+.flag-container:hover {
+    transform: scale(1.05);
+}
+
+/* Styling the text inside the flag section */
+.country-label {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
