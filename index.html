@@ -4,162 +4,358 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CIDO-Home</title>
+    <title>CIDO - Community Initiative for Development Organization</title>
     <link rel="icon" href="images/CIDO-logo.png" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f4f4f4;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 100vh;
-            margin: 0;
-            overflow: hidden;
-        }
-
-        header {
-            background-color: #007A33;
-            color: white;
-            padding: 10px;
-        }
-
-        .logo {
-            width: 150px;
-        }
-
-        .flag-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-grow: 1;
-            margin: 0;
-        }
-
-        .flag {
-            border-radius: 15px;
-            width: 85%;
-            max-width: 280px;
-            height: auto;
-            transition: transform 0.3s ease;
-        }
-
-        .flag:hover {
-            transform: scale(1.07);
-        }
-
-        .spacer {
-            width: 3%;
-        }
-
-        .impact-section {
-            padding: 10px;
-            font-size: 14px;
-            background-color: rgba(255, 255, 240, 0.8);
-            border-radius: 50px;
-            margin-bottom: 20px;
-        }
-
-        footer {
-            background-color: #fc6539;
-            color: black;
-            padding: 10px;
-            font-size: 14px;
-        }
-
-        .social-icons a {
-            color: white;
-            margin: 0 10px;
-            font-size: 18px;
-            text-decoration: none;
-        }
-
-        .country {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .country-label {
-            font-size: 18px;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        @media (max-width: 768px) {
-            .flag-container {
-                flex-direction: column;
-            }
-
-            .flag {
-                width: 80%;
-                max-width: 100px;
-                margin-bottom: 10px;
-            }
-            .country-label {
-                font-size: 16px;
-            }
-
-            .logo {
-                width: 150px;
-            }
-
-            .impact-section {
-                font-size: 12px;
-                padding: 8px;
-            }
-
-            .social-icons a {
-                font-size: 16px;
-            }
-
-            .spacer {
-                display: none;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-<header>
-    <img src="images/CIDO-logo.png" alt="CIDO Logo" class="logo">
-    <p>Support to Local Solutions</p>
-    <p>Visit our localized websites below</p>
-</header>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-wrapper">
+                    <img src="images/CIDO-logo.png" alt="CIDO Logo" class="logo">
+                    <div class="logo-glow"></div>
+                </div>
+                <div class="header-text">
+                    <h1 class="main-title">Support to Local Solutions</h1>
+                    <div class="title-underline"></div>
+                    <p class="subtitle">Transforming Communities Across East Africa</p>
+                    <div class="cta-text">
+                        <i class="bi bi-arrow-down-circle pulse"></i>
+                        <p>Select Your Regional Website</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120">
+                <path fill="#f8f9fa" fill-opacity="1" d="M0,32L48,37.3C96,43,192,53,288,58.7C384,64,480,64,576,58.7C672,53,768,43,864,42.7C960,43,1056,53,1152,58.7C1248,64,1344,64,1392,64L1440,64L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z"></path>
+            </svg>
+        </div>
+    </header>
 
-<div class="flag-container">
-    <div class="country">
-        <a href="https://cidosouthsudan.org" class="south-sudan-map">
-            <img src="images/ss.jpeg" alt="South Sudan Map" class="flag">
-        </a>
-        <p class="country-label">South Sudan</p>
-    </div>
-    <div class="spacer"></div>
-    <div class="country">
-        <a href="https://cidokenya.org" class="kenya-map">
-            <img src="images/kenya.jpeg" alt="Kenya Map" class="flag">
-        </a>
-        <p class="country-label">Kenya</p>
-    </div>
-</div>
+    <main>
+        <div class="mission-section">
+            <div class="container">
+                <div class="mission-cards">
+                    <div class="mission-card vision-card">
+                        <div class="card-header">
+                            <i class="bi bi-eye-fill"></i>
+                            <h3>Vision</h3>
+                        </div>
+                        <div class="card-divider"></div>
+                        <p>A society that is free, just, peaceful and economically advanced.</p>
+                    </div>
+                    <div class="mission-card mission-card-primary">
+                        <div class="card-header">
+                            <i class="bi bi-flag-fill"></i>
+                            <h3>Mission</h3>
+                        </div>
+                        <div class="card-divider"></div>
+                        <p>CIDO's mandate is to mobilize and organize communities to harness their resources, plan effectively and generate solutions for socio-economic advancement.</p>
+                    </div>
+                    <div class="mission-card motto-card">
+                        <div class="card-header">
+                            <i class="bi bi-stars"></i>
+                            <h3>Motto</h3>
+                        </div>
+                        <div class="card-divider"></div>
+                        <p>Support to Local Solutions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="flag-container">
+            <div class="country">
+                <a href="https://cidosouthsudan.org" class="country-link">
+                    <img src="images/ss.jpeg" alt="South Sudan Map" class="flag">
+                </a>
+                <p class="country-label">South Sudan</p>
+            </div>
+            
+            <div class="country">
+                <a href="https://cidokenya.org" class="country-link">
+                    <img src="images/kenya.jpeg" alt="Kenya Map" class="flag">
+                </a>
+                <p class="country-label">Kenya</p>
+            </div>
+        </div>
 
-<div class="impact-section">
-    <p>We have supported over <strong>100,000 families</strong> across Kenya and South Sudan, providing them with essential services like food security, education, and disaster relief.</p>
-</div>
+        <div class="impact-section">
+            <div class="container">
+                <p>
+                    <i class="bi bi-heart-fill text-danger me-2"></i>
+                    We have supported over <strong>100,000 families</strong> across Kenya and South Sudan, 
+                    providing them with essential services like food security, education, and disaster relief.
+                </p>
+            </div>
+        </div>
 
-<footer>
-    <div>Follow Us:</div>
-    <div class="social-icons">
-        <a href="https://www.facebook.com/cidosouthsudan"><i class="bi bi-facebook"></i> Facebook</a>
-        <a href="https://x.com/CidoSouthsudan"><i class="bi bi-twitter"></i> X</a>
-        <a href="https://www.linkedin.com/company/104601612/admin/page-posts/published/"><i class="bi bi-linkedin"></i> LinkedIn</a>
-    </div>
-</footer>
+        <div class="map-section">
+            <div class="container">
+                <h2 class="section-title">Our Impact Locations</h2>
+                <div class="map-container">
+                    <div id="map"></div>
+                    <div class="map-overlay">
+                        <div class="location-list">
+                            <div class="location-item" data-location="south-sudan">
+                                <h3>South Sudan</h3>
+                                <p>Multiple projects across the country</p>
+                            </div>
+                            <div class="location-item" data-location="kenya">
+                                <h3>Kenya</h3>
+                                <p>Active community programs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <footer>
+        <div class="container">
+            <h2 class="h6 mb-3">Connect With Us</h2>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/cidosouthsudan">
+                    <i class="bi bi-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://x.com/CidoSouthsudan">
+                    <i class="bi bi-twitter"></i>
+                    <span>X</span>
+                </a>
+                <a href="https://www.linkedin.com/company/104601612/admin/page-posts/published/">
+                    <i class="bi bi-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNmCrESI5i3sIVUdm0MUqceYFJN7elpbc"></script>
+    <script>
+        // Smooth scroll function
+        function scrollToMission() {
+            document.getElementById('mission').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Initialize map
+        function initMap() {
+            const mapStyles = [
+                {
+                    "featureType": "administrative",
+                    "elementType": "labels.text.fill",
+                    "stylers": [{"color": "#444444"}]
+                },
+                {
+                    "featureType": "landscape",
+                    "elementType": "all",
+                    "stylers": [{"color": "#f2f2f2"}]
+                },
+                {
+                    "featureType": "poi",
+                    "elementType": "all",
+                    "stylers": [{"visibility": "off"}]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "all",
+                    "stylers": [{"saturation": -100}, {"lightness": 45}]
+                },
+                {
+                    "featureType": "road.highway",
+                    "elementType": "all",
+                    "stylers": [{"visibility": "simplified"}]
+                },
+                {
+                    "featureType": "road.arterial",
+                    "elementType": "labels.icon",
+                    "stylers": [{"visibility": "off"}]
+                },
+                {
+                    "featureType": "transit",
+                    "elementType": "all",
+                    "stylers": [{"visibility": "off"}]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "all",
+                    "stylers": [{"color": "#007A33"}, {"lightness": 70}]
+                }
+            ];
+
+            const map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 5,
+                center: { lat: 1.2921, lng: 36.8219 }, // Centered between Kenya and South Sudan
+                styles: mapStyles,
+                mapTypeControl: false,
+                streetViewControl: false,
+                fullscreenControl: true,
+                zoomControl: true,
+                gestureHandling: 'cooperative'
+            });
+
+            // Custom marker icon
+            const markerIcon = {
+                path: google.maps.SymbolPath.CIRCLE,
+                fillColor: '#007A33',
+                fillOpacity: 1,
+                strokeColor: '#FFFFFF',
+                strokeWeight: 2,
+                scale: 10
+            };
+
+            // Add markers for project locations
+            const locations = [
+                // Lakes States
+                {
+                    position: { lat: 6.7743, lng: 29.9368 },
+                    title: "Lakes States - Yirol East",
+                    info: "Active programs in Yirol East focusing on community development"
+                },
+                // Unity State
+                {
+                    position: { lat: 9.3396, lng: 29.7918 },
+                    title: "Unity - Pariang and Leer",
+                    info: "Community development programs in Pariang and Leer regions"
+                },
+                // Upper Nile
+                {
+                    position: { lat: 9.8859, lng: 32.7192 },
+                    title: "Upper Nile - Panyikang",
+                    info: "Development initiatives in Panyikang area"
+                },
+                // Jonglei State
+                {
+                    position: { lat: 8.2159, lng: 33.9183 },
+                    title: "Jonglei State Programs",
+                    info: `<strong>Programs in:</strong><br>
+                    • Akobo East<br>
+                    • West Pibor<br>
+                    • Nyirol<br>
+                    • Bor South<br>
+                    • Bor<br>
+                    • Duk<br>
+                    • Twic East<br><br>
+                    <strong>Activities in Akobo County:</strong><br>
+                    • Health & Nutrition: Static health facilities & Mobile clinics<br>
+                    • SAM & MAM management through Nutrition sites<br>
+                    • WASH: Borehole rehabilitation & hygiene promotion<br>
+                    • Protection: Child protection & peace building<br>
+                    • Distribution of non-food items & agricultural inputs`
+                },
+                // Greater Equatoria
+                {
+                    position: { lat: 4.8594, lng: 31.5713 },
+                    title: "Greater Equatoria Region",
+                    info: `<strong>Active Programs in:</strong><br>
+                    • Kajokeji<br>
+                    • Wonderuba<br>
+                    • Lainya<br>
+                    • Juba<br>
+                    • Yei<br>
+                    • Morobo<br>
+                    • Nimule<br>
+                    • Torit<br>
+                    • Budi<br>
+                    • Ezo<br>
+                    • Tambura<br>
+                    • Yambio`
+                },
+                // Pibor Special Programs
+                {
+                    position: { lat: 6.7989, lng: 33.1305 },
+                    title: "Pibor Special Programs",
+                    info: `<strong>Key Interventions:</strong><br>
+                    • Protection: GBV & Child Protection<br>
+                    • Human rights advocacy<br>
+                    • Shelter & Non-Food Items distribution<br>
+                    • Cash Based Interventions`
+                },
+                // Kenya Projects
+                {
+                    position: { lat: -1.2921, lng: 36.8219 },
+                    title: "Kenya Projects",
+                    info: "Active community development programs across Kenya"
+                }
+            ];
+
+            // Create info window with custom styling
+            const infoWindow = new google.maps.InfoWindow({
+                maxWidth: 300
+            });
+
+            locations.forEach(location => {
+                const marker = new google.maps.Marker({
+                    position: location.position,
+                    map: map,
+                    title: location.title,
+                    icon: markerIcon,
+                    animation: google.maps.Animation.DROP
+                });
+
+                // Add click listener to marker
+                marker.addListener('click', () => {
+                    infoWindow.setContent(
+                        `<div class="info-window" style="padding: 10px;">
+                            <h3 style="color: #007A33; margin: 0 0 8px 0; font-size: 16px; font-weight: bold;">${location.title}</h3>
+                            <div style="color: #444; font-size: 14px; line-height: 1.4;">${location.info}</div>
+                        </div>`
+                    );
+                    infoWindow.open(map, marker);
+                });
+            });
+
+            // Update overlay with all locations
+            const locationList = document.querySelector('.location-list');
+            locationList.innerHTML = locations.map((location, index) => `
+                <div class="location-item" data-index="${index}">
+                    <h3>${location.title}</h3>
+                    <p>Click to view location</p>
+                </div>
+            `).join('');
+
+            // Add click listeners to location items in overlay
+            document.querySelectorAll('.location-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    const index = parseInt(item.dataset.index);
+                    const location = locations[index];
+                    map.panTo(location.position);
+                    map.setZoom(7);
+                });
+
+                // Add hover effect to show programs
+                item.addEventListener('mouseenter', () => {
+                    const index = parseInt(item.dataset.index);
+                    const location = locations[index];
+                    item.innerHTML = `
+                        <h3>${location.title}</h3>
+                        <div class="program-preview">${location.info}</div>
+                    `;
+                });
+
+                item.addEventListener('mouseleave', () => {
+                    const index = parseInt(item.dataset.index);
+                    const location = locations[index];
+                    item.innerHTML = `
+                        <h3>${location.title}</h3>
+                        <p>Click to view location</p>
+                    `;
+                });
+            });
+        }
+
+        // Load map when page is ready
+        window.addEventListener('load', initMap);
+    </script>
 </body>
 
 </html>
